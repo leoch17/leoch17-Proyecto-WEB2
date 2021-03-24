@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.img-user{
+    text-align: center;
+    width: 100%;
+    height: 354px;
+	padding: 25px;;
+    background-image: url("../imagenes/9934-azul-liso.jpg");
+}
+
+.avatar{
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    position: relative;
+    left: 20px;
+}
+
+
+.info{
+    width: 100%;
+    margin: auto;
+    /*grid-template-columns: repeat(4, 1fr);*/
+    gap: 25px;
+    margin: 0.5px;  
+}
+
+/*Navegacion*/
+.main-info{
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #bebebe;
+    height: 115px;
+    padding: 20px 0;
+}
+
+.main-info .usuario{
+    position: relative;
+    left: -200px;
+}
+
+.main-info .correo{
+    position: relative;
+    left: -580px
+}
+button{
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #6e717a;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    left: 100px;
+    top: -10px;   
+}
+
+.cerrar-perfil{
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #5672a7;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    left: 1060px;
+	top: -485px; 
+}
+
+.borrar-perfil{
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #5672a7;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    left: 903px;
+	top: -424px;
+}
+
+.subir{
+    padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #56727a;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    left: 148px;
+	top: -38px;
+}
+
+.subir{
+    padding: 11px 10px;
+    background: #5672a7;
+    color:#fff;
+    border:0px solid #fff;
+}
+ 
+.subir:hover{
+    background: rgba(94,125,227, .9);
+}
+	
+button:hover {
+	background: rgba(94,125,227, .9);
+	}

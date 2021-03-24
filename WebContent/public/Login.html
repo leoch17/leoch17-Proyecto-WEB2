@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="custom/Customlogin.css"> 
+<title>Iniciar Sesion</title>
+
+</head>
+<body>
+   <form action="Login" method="post"></form>
+   <h2>Inicio de Sesion</h2>
+    <div class ="body-image">
+        <div class ="form-box">
+            <div class ="boton-iniciar">
+            </div>
+            <form id = "login" class ="grupo-input">
+                <input type ="text" class="campo-input" name="nu" placeholder="Nombre de Usuario" maxlength="80" required> <br>
+                <input type ="password" class="campo-input" name="co" placeholder="Contraseña" maxlength="80" required> <br>
+                <input type ="text" class="campo-input" name="ce" placeholder="Correo Electronico" maxlength="80" required> <br>
+                <input type ="text" class="campo-input" name="telef" placeholder="Telefono"  maxlength="12" required> <br>
+                <input type ="text" class="campo-input" name="sex" placeholder="Sexo"  maxlength="10" required> <br>
+                <input type ="text" class="campo-input" name="date" placeholder="Fecha de Nacimiento" maxlength="10" required> <br>
+                <input type ="text" class="campo-input" name="country" placeholder="Pais" maxlength="20"> <br>
+                <input type ="text" class="campo-input" name="state" placeholder="Estado" maxlength="20"> <br>
+                <input type ="text" class="campo-input" name="city" placeholder="Ciudad" maxlength="20"> <br>
+                <br></br>
+                <br></br>
+                <button id="button-login" type ="submit" class="boton-submit">Iniciar Sesion</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="Fetch/Fetchlogin.js"></script>
+</html>

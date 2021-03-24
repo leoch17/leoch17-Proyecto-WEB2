@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="custom/CustomPerfil.css">
+    <link rel="stylesheet" href="custom/CustomInformacionPerfil.css">
+    <title>Perfil de Usuario</title>
+</head>
+<body onload="init()" id="body">
+    	<br>
+		 <p id="parrafo" style="position: relative; left: 1100px; font-family: 'Oswald', sans-serif; font-size: 15px;"> Perfil De: <input type="text" id="ce" name="something" disabled ></p>
+		 <br>
+		 <hr>  
+    	<input type="hidden"  id="perfil" name="perfil"  value="" >
+    	
+    <div class="image-user" >
+    	<div id="imageuser"><img src="ImageUser/usuario.jpg" class="avatar"></img></div>   	
+        <div id="imagen"></div>
+        <label for="file-upload" class="subir">
+            <i class="fas fa-cloud-upload-alt"></i>Modificar Archivo
+        </label>
+        <input type="file" id="file-upload" accept="image/*" name="imagenes" style='display: none;'/>       
+               
+    </div>
+    
+    <div class="contenedor">	        
+	        <div class="overlay" id="overlay">
+	            <div class="popup" id="popup">
+	                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+	                <h3>Informacion</h3>
+	                <form id="formulario">
+	                    <div class="contenedor-inputs">
+	                    	<input type="email" placeholder="Ejemplo@gmail.com" id="ce">
+	                        <input type="text" placeholder="Nombre" id="nombre">	                        
+	                    </div>
+	                    <input type="button" class="btn-submit" value="Guardar" onclick="borrarInfo()">
+	                    <input type="button" class="btn-submit" value="Cerrar" onclick="cerrarVentana()">
+	                </form>
+	            </div>
+	        </div>
+	</div>
+    
+    <div class="info">
+        <nav class="main-info">
+        <div id="info"></div>
+        <div id="infoActual"></div>     
+        </nav>
+    </div>
+    <!--  <button id="btn-abrir-popup" class="btn-abrir-popup">Modificar Informacion</button>  --> 
+    <button id="cerrar-perfil" class="cerrar-perfil" onclick="cerrarPerfil()">Volver A Sesion</button> 
+    <button id="borrar-perfil" class="borrar-perfil" onclick="borrarPerfil()">Eliminar Perfil</button>
+</body>
+<script src="Fetch/FetchSesionPerfil.js"></script>
+</html>

@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background: #e6e6e6;
+}
+
+#parrafo{
+    font-family: 'Oswald', sans-serif;
+}
+
+header, .main, footer{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    font-family: 'Oswald', sans-serif;
+}
+
+header nav{
+    background: #528FD5;
+    overflow: hidden;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    float: left;
+}
+
+header nav ul li a{
+    padding: 10px 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    background: #75ACEC;
+}
+
+.main .articles{
+    width: 100%;
+    margin-right: 1.5%;
+    float: left;
+}
+
+.main .articles article{
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+.subir{
+    padding: 7px 47px;
+	background: #6D6D6D;
+	color: #fff;
+	border: 0px solid #fff;
+	position: relative;
+	left: 2px;
+	top: 13px;
+}
+ 
+.subir:hover{
+    background: #4A88F4;
+}
+
+aside{
+    width: 30%;
+    background: #75ACEC;
+    float: left;
+    padding: 40px;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+aside .boton{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+aside .boton:focus{
+    border: 1.8px solid #1668c4;
+}
+
+aside .boton{
+    margin-bottom: 0px;
+    background: #1668c4;
+    color: #fff;
+    border: none;
+}
+
+aside .boton:hover{
+    background: #4A88F4;
+    cursor: pointer;
+}
+
+button{
+    padding: 10px 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+button:focus{
+    border: 1.8px solid #1668c4;
+}
+
+button{
+    margin-bottom: 0px;
+    background: #6D6D6D;
+    color: #fff;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+	top: 20px;
+}
+
+button:hover{
+    background: #4A88F4;
+    cursor: pointer;
+} 
+
+
+footer{
+    background: #000;
+    color: #fff;
+    clear: both;
+    padding: 10px 0px;
+    text-align: center;
+}

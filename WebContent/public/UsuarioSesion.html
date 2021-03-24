@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="custom/CustomSesion.css">
+	
+    <title>Sesion de Usuario</title>
+</head>
+    <body onload="init()">
+    	<br>
+		 <p id="parrafo" style="position: relative; left: 1100px; font-family: 'Oswald', sans-serif; font-size: 15px;"> Sesion Abierta Por: <input type="text" id="email" name="something" disabled ></p>
+		 <br>
+		 <hr>  
+    	<input type="hidden"  id="sesion" name="sesion"  value="" >
+    	
+        <header>
+            <div class="logotipo">
+                <img src="images/brand.png" width="100">
+            </div>
+            <nav>
+                <ul>
+                    <li><a  onClick = "openPerfil()">Perfil</a></li>
+                    <li><a href="#" onClick ="cerrarSesion()" >Cerrar sesion</a></li>                 
+                </ul>              
+            </nav>
+        </header>
+        <section class="main">
+            <section class="articles">
+                <article  width="300">
+                	<form id="form-archivo" enctype="multipart/form-data" >
+	                    <h3>Lista De Archivos </h3>	
+	                    <div id="grillaData" >					  
+						 <table id="TF">
+							<thead id="hTF">
+							</thead>
+							<tbody id="bTF">
+							</tbody>
+						 </table>
+						</div>                   
+	                    <label for="subir_archivo" class="subir">
+			            <i class="fas fa-cloud-upload-alt"></i> Subir archivo</label>
+			        	<input type="file" id="subir_archivo" accept="image/*" name="archivos" style='display: none;'/>                       				   				
+    				</form>
+    				<div id="resultado"></div>	 
+                </article>
+                <article   width="500" class="visualizacion" >
+                    <h3>Visualizacion De Archivos</h3>
+                    <div id ="div-archivos" width="1000px" ></div>
+                     <div id ="boton" width="600px" ></div>
+                     <button onclick="borrarArchivos()">Borrar Archivos</button> 
+		        </article>               
+            </section>
+        </section>
+               
+        <footer>
+            <p>Sesion De Usuario</p>
+        </footer>
+</body>
+<script src="Fetch/FetchSesionUsuario.js"></script>
+</html>

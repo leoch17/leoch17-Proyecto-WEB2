@@ -1,0 +1,46 @@
+h2{
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-size: 18px;
+}
+
+.division{
+	width: 23%;
+	border: 1px, solid #ccc;
+	margin: auto;
+	padding: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 50px;
+	display: block;
+}
+
+button, a{
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px, solid, #ccc;
+	display: block;
+	text-decoration: none;
+}
+
+button:focus, a:focus{
+	border: 1.8px, solid, #1668c4;
+}
+
+button, a{
+	margin-bottom: 0px;
+	background: #1668c4;
+	color: #fff;
+	border: none;
+	text-decoration: none;
+}
+
+button:hover{
+	background: #4A88F4;
+	cursor: pointer;
+}
+
+body{
+	background: #7FFFD4;
+}
